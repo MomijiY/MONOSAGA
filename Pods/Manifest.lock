@@ -1,0 +1,31 @@
+PODS:
+  - HCKalmanFilter (1.2.1):
+    - Surge (~> 2.0.0)
+  - Realm (10.2.0):
+    - Realm/Headers (= 10.2.0)
+  - Realm/Headers (10.2.0)
+  - RealmSwift (10.2.0):
+    - Realm (= 10.2.0)
+  - Surge (2.0.0)
+
+DEPENDENCIES:
+  - HCKalmanFilter
+  - Realm
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - HCKalmanFilter
+    - Realm
+    - RealmSwift
+    - Surge
+
+SPEC CHECKSUMS:
+  HCKalmanFilter: e44b0885101e68f5e1ffefa29efab12c65c301d6
+  Realm: d7914ebf66bb182469726f997c4c38eff286aab0
+  RealmSwift: aad08b7dc8c732b7b5794286e9df83739bf834f1
+  Surge: 1f0286bc5f0fe4283f3455479895bf85c7ef7760
+
+PODFILE CHECKSUM: fcc0313fe8122c1b748bc724baddeb60913ae271
+
+COCOAPODS: 1.10.0

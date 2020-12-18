@@ -1,0 +1,6 @@
+framework module Pods_StopProcrastination_StopProcrastinationUITests {
+  umbrella header "Pods-StopProcrastination-StopProcrastinationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
