@@ -5,9 +5,6 @@
 //  Created by 吉川椛 on 2020/12/05.
 //
 
-//  Copyright © 2016年 Misato Morino. All rights reserved.
-//
-
 import UIKit
 import MapKit
 import CoreLocation
