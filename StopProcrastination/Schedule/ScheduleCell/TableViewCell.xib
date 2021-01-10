@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="StopProcrastination" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021/01/08 00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHZ-9a-bMX">
+                        <rect key="frame" x="8" y="12" width="125" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="ril-UF-CeY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJX-0S-kNu">
+                        <rect key="frame" x="7" y="41" width="278" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="278" id="1jK-dF-e6r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="content(What i did)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ca-qa-8nH">
+                        <rect key="frame" x="7" y="73" width="278" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="278" id="4q5-Oj-RTx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021/01/08 00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLO-Cx-kg0">
+                        <rect key="frame" x="199" y="12" width="125" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="t5v-jC-6P8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYn-Us-rs9">
+                        <rect key="frame" x="161" y="12" width="11" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="11" id="4gK-3P-efs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2ca-qa-8nH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="8vg-Nr-ENX"/>
+                    <constraint firstItem="SHZ-9a-bMX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="JC4-lv-z7X"/>
+                    <constraint firstItem="IJX-0S-kNu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="LKG-dt-cdI"/>
+                    <constraint firstItem="qYn-Us-rs9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="QPV-sQ-m3g"/>
+                    <constraint firstItem="SHZ-9a-bMX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="aYb-qb-1XC"/>
+                    <constraint firstItem="2ca-qa-8nH" firstAttribute="top" secondItem="IJX-0S-kNu" secondAttribute="bottom" constant="14" id="h3t-AU-R4q"/>
+                    <constraint firstItem="qYn-Us-rs9" firstAttribute="leading" secondItem="SHZ-9a-bMX" secondAttribute="trailing" constant="28" id="mxX-rb-SNY"/>
+                    <constraint firstItem="qYn-Us-rs9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="qPn-wg-Sba"/>
+                    <constraint firstItem="NLO-Cx-kg0" firstAttribute="leading" secondItem="qYn-Us-rs9" secondAttribute="trailing" constant="27" id="qYY-98-sOG"/>
+                    <constraint firstItem="NLO-Cx-kg0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="ucB-oB-6Bh"/>
+                    <constraint firstItem="IJX-0S-kNu" firstAttribute="top" secondItem="qYn-Us-rs9" secondAttribute="bottom" constant="11" id="xRC-lT-zYa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="2ca-qa-8nH" id="cOR-Pv-i36"/>
+                <outlet property="placeLabel" destination="IJX-0S-kNu" id="vfW-oP-NAD"/>
+                <outlet property="timeOneLabel" destination="SHZ-9a-bMX" id="3jx-cq-ilz"/>
+                <outlet property="timeTwoLabel" destination="NLO-Cx-kg0" id="klr-5x-pHo"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+</document>

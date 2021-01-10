@@ -10,6 +10,14 @@
 		572F306DEA8134746FF0F98C /* Pods_StopProcrastination.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B87FE1B9865665006C46CB9 /* Pods_StopProcrastination.framework */; };
 		61A765C55C5976C726CD2B46 /* Pods_StopProcrastinationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D570DD134541A82B12B4EB8 /* Pods_StopProcrastinationTests.framework */; };
 		6C667E1051CA7792E2D0DCC1 /* Pods_StopProcrastination_StopProcrastinationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14042C7BD8B82FDC20E7AC6 /* Pods_StopProcrastination_StopProcrastinationUITests.framework */; };
+		792BF03A25A86BC5005B970E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BF03925A86BC5005B970E /* UIColor.swift */; };
+		792BF03F25A86BFC005B970E /* AddDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BF03E25A86BFC005B970E /* AddDate.swift */; };
+		792BF04725A86C86005B970E /* DateUtls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BF04625A86C86005B970E /* DateUtls.swift */; };
+		792BF04E25A86CCE005B970E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BF04C25A86CCE005B970E /* TableViewCell.swift */; };
+		792BF04F25A86CCE005B970E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792BF04D25A86CCE005B970E /* TableViewCell.xib */; };
+		792BF05725A872A0005B970E /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BF05625A872A0005B970E /* ScheduleTableViewController.swift */; };
+		792BF06225A96D8E005B970E /* AddScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BF06125A96D8E005B970E /* AddScheduleTableViewController.swift */; };
+		792BF07225A9BFE1005B970E /* DetailScheduledTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BF07125A9BFE1005B970E /* DetailScheduledTableViewController.swift */; };
 		79B0AE7D256A720B00ADD3BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0AE7C256A720B00ADD3BE /* AppDelegate.swift */; };
 		79B0AE84256A720B00ADD3BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B0AE82256A720B00ADD3BE /* Main.storyboard */; };
 		79B0AE87256A720B00ADD3BE /* StopProcrastination.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79B0AE85256A720B00ADD3BE /* StopProcrastination.xcdatamodeld */; };
@@ -25,7 +33,6 @@
 		79B0AEF4256B77AC00ADD3BE /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0AEF3256B77AC00ADD3BE /* NavViewController.swift */; };
 		79B0AEFC256B77E000ADD3BE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0AEFB256B77DF00ADD3BE /* TabViewController.swift */; };
 		79E9A89D257B3C64000F5863 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A89C257B3C64000F5863 /* DetailTableViewController.swift */; };
-		79E9A8B6257B7E3E000F5863 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A8B5257B7E3E000F5863 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,14 @@
 		67F78709C054E10C6ACBA132 /* Pods-StopProcrastination.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopProcrastination.release.xcconfig"; path = "Target Support Files/Pods-StopProcrastination/Pods-StopProcrastination.release.xcconfig"; sourceTree = "<group>"; };
 		6EB36BF2A37CE757094273A3 /* Pods-StopProcrastination.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopProcrastination.debug.xcconfig"; path = "Target Support Files/Pods-StopProcrastination/Pods-StopProcrastination.debug.xcconfig"; sourceTree = "<group>"; };
 		71BD7A4A2332100BF9E226F1 /* Pods-StopProcrastinationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopProcrastinationTests.debug.xcconfig"; path = "Target Support Files/Pods-StopProcrastinationTests/Pods-StopProcrastinationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		792BF03925A86BC5005B970E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		792BF03E25A86BFC005B970E /* AddDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDate.swift; sourceTree = "<group>"; };
+		792BF04625A86C86005B970E /* DateUtls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtls.swift; sourceTree = "<group>"; };
+		792BF04C25A86CCE005B970E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		792BF04D25A86CCE005B970E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		792BF05625A872A0005B970E /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		792BF06125A96D8E005B970E /* AddScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleTableViewController.swift; sourceTree = "<group>"; };
+		792BF07125A9BFE1005B970E /* DetailScheduledTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScheduledTableViewController.swift; sourceTree = "<group>"; };
 		79B0AE79256A720B00ADD3BE /* StopProcrastination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopProcrastination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B0AE7C256A720B00ADD3BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79B0AE83256A720B00ADD3BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +87,6 @@
 		79B0AEF3256B77AC00ADD3BE /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		79B0AEFB256B77DF00ADD3BE /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		79E9A89C257B3C64000F5863 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
-		79E9A8B5257B7E3E000F5863 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8B87FE1B9865665006C46CB9 /* Pods_StopProcrastination.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopProcrastination.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC82CB627C386EE18EE0DC29 /* Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig"; path = "Target Support Files/Pods-StopProcrastination-StopProcrastinationUITests/Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0F2CA196612B24FD5F669D9 /* Pods-StopProcrastinationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopProcrastinationTests.release.xcconfig"; path = "Target Support Files/Pods-StopProcrastinationTests/Pods-StopProcrastinationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +144,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		792BF01C25A86A62005B970E /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				792BF05625A872A0005B970E /* ScheduleTableViewController.swift */,
+				792BF06125A96D8E005B970E /* AddScheduleTableViewController.swift */,
+				792BF07125A9BFE1005B970E /* DetailScheduledTableViewController.swift */,
+				792BF04B25A86CA6005B970E /* ScheduleCell */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		792BF04B25A86CA6005B970E /* ScheduleCell */ = {
+			isa = PBXGroup;
+			children = (
+				792BF04C25A86CCE005B970E /* TableViewCell.swift */,
+				792BF04D25A86CCE005B970E /* TableViewCell.xib */,
+			);
+			path = ScheduleCell;
+			sourceTree = "<group>";
+		};
 		79B0AE70256A720B00ADD3BE = {
 			isa = PBXGroup;
 			children = (
@@ -156,8 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				79B0AE7C256A720B00ADD3BE /* AppDelegate.swift */,
-				79E9A8B4257B7E2E000F5863 /* Map */,
 				79B0AEB8256A77D400ADD3BE /* Home */,
+				792BF01C25A86A62005B970E /* Schedule */,
 				79B0AEF2256B779700ADD3BE /* Others */,
 				79B0AECE256A7EFD00ADD3BE /* Model */,
 				79B0AE82256A720B00ADD3BE /* Main.storyboard */,
@@ -202,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				79B0AECF256A7F1700ADD3BE /* Things.swift */,
+				792BF03E25A86BFC005B970E /* AddDate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,16 +255,10 @@
 			children = (
 				79B0AEF3256B77AC00ADD3BE /* NavViewController.swift */,
 				79B0AEFB256B77DF00ADD3BE /* TabViewController.swift */,
+				792BF03925A86BC5005B970E /* UIColor.swift */,
+				792BF04625A86C86005B970E /* DateUtls.swift */,
 			);
 			path = Others;
-			sourceTree = "<group>";
-		};
-		79E9A8B4257B7E2E000F5863 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				79E9A8B5257B7E3E000F5863 /* MapViewController.swift */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +273,7 @@
 				79B0AE76256A720B00ADD3BE /* Frameworks */,
 				79B0AE77256A720B00ADD3BE /* Resources */,
 				3DD9A1D56B071FE00D889BEE /* [CP] Embed Pods Frameworks */,
+				560DB92C98A6CB8BC80E34F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +312,7 @@
 				79B0AE9A256A720F00ADD3BE /* Frameworks */,
 				79B0AE9B256A720F00ADD3BE /* Resources */,
 				3F8CBDCCAEE537FBDFDDE723 /* [CP] Embed Pods Frameworks */,
+				9946B2FC7A32CF86B59A1EAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79B0AEE3256B299500ADD3BE /* NeedThingsTableViewCell.xib in Resources */,
+				792BF04F25A86CCE005B970E /* TableViewCell.xib in Resources */,
 				79B0AE8C256A720F00ADD3BE /* LaunchScreen.storyboard in Resources */,
 				79B0AE89256A720F00ADD3BE /* Assets.xcassets in Resources */,
 				79B0AE84256A720B00ADD3BE /* Main.storyboard in Resources */,
@@ -442,6 +474,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		560DB92C98A6CB8BC80E34F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopProcrastination/Pods-StopProcrastination-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopProcrastination/Pods-StopProcrastination-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopProcrastination/Pods-StopProcrastination-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9946B2FC7A32CF86B59A1EAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopProcrastination-StopProcrastinationUITests/Pods-StopProcrastination-StopProcrastinationUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopProcrastination-StopProcrastinationUITests/Pods-StopProcrastination-StopProcrastinationUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopProcrastination-StopProcrastinationUITests/Pods-StopProcrastination-StopProcrastinationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B9C6C9D5CDB5635B200E7479 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,13 +537,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792BF05725A872A0005B970E /* ScheduleTableViewController.swift in Sources */,
+				792BF06225A96D8E005B970E /* AddScheduleTableViewController.swift in Sources */,
 				79B0AEC2256A7B1200ADD3BE /* NeedThingsViewController.swift in Sources */,
+				792BF04725A86C86005B970E /* DateUtls.swift in Sources */,
 				79B0AE87256A720B00ADD3BE /* StopProcrastination.xcdatamodeld in Sources */,
+				792BF03F25A86BFC005B970E /* AddDate.swift in Sources */,
 				79B0AEDB256A852C00ADD3BE /* ContainerViewController.swift in Sources */,
-				79E9A8B6257B7E3E000F5863 /* MapViewController.swift in Sources */,
 				79E9A89D257B3C64000F5863 /* DetailTableViewController.swift in Sources */,
+				792BF04E25A86CCE005B970E /* TableViewCell.swift in Sources */,
+				792BF07225A9BFE1005B970E /* DetailScheduledTableViewController.swift in Sources */,
 				79B0AEF4256B77AC00ADD3BE /* NavViewController.swift in Sources */,
 				79B0AEE2256B299500ADD3BE /* NeedThingsTableViewCell.swift in Sources */,
+				792BF03A25A86BC5005B970E /* UIColor.swift in Sources */,
 				79B0AED0256A7F1700ADD3BE /* Things.swift in Sources */,
 				79B0AEFC256B77E000ADD3BE /* TabViewController.swift in Sources */,
 				79B0AE7D256A720B00ADD3BE /* AppDelegate.swift in Sources */,

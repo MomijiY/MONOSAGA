@@ -17,6 +17,7 @@ class NeedThingsViewController: UITableViewController, UITextFieldDelegate {
         super.viewDidLoad()
         tableView.register(NeedThingsTableViewCell.nib, forCellReuseIdentifier: NeedThingsTableViewCell.reuseIdentifier)
         tableView.allowsMultipleSelection = true
+        tableView.tableFooterView = UIView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
