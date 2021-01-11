@@ -140,21 +140,28 @@ extension AddScheduleTableViewController {
     
     
     func saveImDate() {
-        items.time1 = timeOneTextField.text!
-        items.time2 = timeTwoTextField.text!
-        items.place = placeTextField.text!
-        items.content = contentTextView.text
-        
-        let realm = try! Realm()
-        try! realm.write{
-            let events = [AddDate(value: ["time1": items.time1,
-                                          "time2": items.time2,
-                                          "place": items.place,
-                                          "content": items.content])]
-            realm.add(events)
-            print(events)
+        if placeTextField.text == "" {
+            let alertController: UIAlertController = UIAlertController(title: "空欄があります。", message: "場所を入力してください。", preferredStyle: .alert)
+            let okButton: UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(okButton)
+            self.present(alertController, animated: true, completion: nil)
+        } else {
+            items.time1 = timeOneTextField.text!
+            items.time2 = timeTwoTextField.text!
+            items.place = placeTextField.text!
+            items.content = contentTextView.text
+            
+            let realm = try! Realm()
+            try! realm.write{
+                let events = [AddDate(value: ["time1": items.time1,
+                                              "time2": items.time2,
+                                              "place": items.place,
+                                              "content": items.content])]
+                realm.add(events)
+                print(events)
+            }
+            self.navigationController?.popViewController(animated: true)
         }
-        self.navigationController?.popViewController(animated: true)
 
     }
 }
