@@ -57,6 +57,11 @@ extension ScheduleTableViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let memo = items[indexPath.row]
+        UserDefaults.standard.set(memo.time1, forKey: "time1")
+        UserDefaults.standard.set(memo.time2, forKey: "time2")
+        UserDefaults.standard.set(memo.place, forKey: "place")
+        UserDefaults.standard.set(memo.content, forKey: "content")
         self.performSegue(withIdentifier: "toScheduleDetail", sender: nil)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

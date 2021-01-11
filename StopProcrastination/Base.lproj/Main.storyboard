@@ -33,6 +33,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="モノを保存" id="CP3-vy-s3g">
+                        <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="sf7-Rw-NaE">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="Kxk-13-n1a" kind="show" id="szi-Pd-mZN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CwB-BF-GhS">
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
@@ -47,6 +53,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tjz-dd-FY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2661" y="-342"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="d5V-Sp-2xi">
+            <objects>
+                <viewController id="Kxk-13-n1a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GaP-Ws-57u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.001.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="PJq-oJ-NXS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bH3-nJ-QU3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PJq-oJ-NXS" firstAttribute="trailing" secondItem="bH3-nJ-QU3" secondAttribute="trailing" id="JFS-mY-c0n"/>
+                            <constraint firstItem="PJq-oJ-NXS" firstAttribute="top" secondItem="bH3-nJ-QU3" secondAttribute="top" id="eZw-7d-nMs"/>
+                            <constraint firstItem="PJq-oJ-NXS" firstAttribute="bottom" secondItem="bH3-nJ-QU3" secondAttribute="bottom" id="u45-Qr-SuT"/>
+                            <constraint firstItem="PJq-oJ-NXS" firstAttribute="leading" secondItem="bH3-nJ-QU3" secondAttribute="leading" id="uoA-NS-ux5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="c1H-sG-G26">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="7Fe-by-s5D">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="Ozz-kb-hJ9" kind="show" id="RU8-xx-pgC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DV1-St-Qq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="-1383"/>
         </scene>
         <!--Container Table View Controller-->
         <scene sceneID="QpG-si-L8Q">
@@ -480,7 +520,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hJ-EW-OB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3532" y="61"/>
+            <point key="canvasLocation" x="3531.884057971015" y="60.9375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aW6-D6-g7b">
@@ -854,12 +894,469 @@
             </objects>
             <point key="canvasLocation" x="3532" y="1586"/>
         </scene>
+        <!--チュートリアル-->
+        <scene sceneID="cdo-MI-8wc">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Ozz-kb-hJ9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kgs-dd-2gg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.002.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="uHK-dH-yAc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Fc-Ud-Y3z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uHK-dH-yAc" firstAttribute="top" secondItem="2Fc-Ud-Y3z" secondAttribute="top" id="1c0-Ec-9PR"/>
+                            <constraint firstItem="uHK-dH-yAc" firstAttribute="leading" secondItem="2Fc-Ud-Y3z" secondAttribute="leading" id="Q1c-ny-BQ9"/>
+                            <constraint firstItem="uHK-dH-yAc" firstAttribute="bottom" secondItem="2Fc-Ud-Y3z" secondAttribute="bottom" id="RI0-qC-jZh"/>
+                            <constraint firstItem="uHK-dH-yAc" firstAttribute="trailing" secondItem="2Fc-Ud-Y3z" secondAttribute="trailing" id="wsd-We-rQs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="qi4-Ji-Ngk">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="Eb0-Y8-yZn">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="yGP-1w-zwQ" kind="show" id="bEG-Jp-HsB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqf-IO-TfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="GJr-bf-xFJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="yGP-1w-zwQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ceh-kq-CmE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.003.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="05i-yD-kuJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X4O-wQ-UIn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="05i-yD-kuJ" firstAttribute="top" secondItem="X4O-wQ-UIn" secondAttribute="top" id="Aux-cJ-2cP"/>
+                            <constraint firstItem="05i-yD-kuJ" firstAttribute="bottom" secondItem="X4O-wQ-UIn" secondAttribute="bottom" id="GDG-ra-pcx"/>
+                            <constraint firstItem="05i-yD-kuJ" firstAttribute="leading" secondItem="X4O-wQ-UIn" secondAttribute="leading" id="Piy-oW-jaE"/>
+                            <constraint firstItem="05i-yD-kuJ" firstAttribute="trailing" secondItem="X4O-wQ-UIn" secondAttribute="trailing" id="q97-kD-oyF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="o6p-Yp-3Zq">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="b8A-Cs-4cX">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="4X8-wZ-rIl" kind="show" id="Rno-nP-MyU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyo-u3-KBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2661" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="r4w-9a-v31">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4X8-wZ-rIl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X9Y-8J-gvV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.004.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="HSv-wM-2V8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uOq-aM-osl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HSv-wM-2V8" firstAttribute="bottom" secondItem="uOq-aM-osl" secondAttribute="bottom" id="HJd-Ld-KoF"/>
+                            <constraint firstItem="HSv-wM-2V8" firstAttribute="top" secondItem="uOq-aM-osl" secondAttribute="top" id="KGB-KL-Oma"/>
+                            <constraint firstItem="HSv-wM-2V8" firstAttribute="trailing" secondItem="uOq-aM-osl" secondAttribute="trailing" id="N9f-DY-rZB"/>
+                            <constraint firstItem="HSv-wM-2V8" firstAttribute="leading" secondItem="uOq-aM-osl" secondAttribute="leading" id="lsN-ny-Fz0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="js7-tG-vtE">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="XdD-sd-ANC">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="2ga-NF-aiw" kind="show" id="XkC-0v-Qu6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1r-IA-9jt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3532" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="uIu-dR-kCK">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="2ga-NF-aiw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dse-aC-O9B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.005.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oNz-US-RJr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vBM-3W-8t6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oNz-US-RJr" firstAttribute="leading" secondItem="vBM-3W-8t6" secondAttribute="leading" id="3af-sz-99g"/>
+                            <constraint firstItem="oNz-US-RJr" firstAttribute="bottom" secondItem="vBM-3W-8t6" secondAttribute="bottom" id="94N-dQ-sys"/>
+                            <constraint firstItem="oNz-US-RJr" firstAttribute="trailing" secondItem="vBM-3W-8t6" secondAttribute="trailing" id="cOy-Y3-16v"/>
+                            <constraint firstItem="oNz-US-RJr" firstAttribute="top" secondItem="vBM-3W-8t6" secondAttribute="top" id="qEZ-5h-6gf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="uk3-XZ-YnE">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="9Cg-iH-Abh">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="BFy-DR-Ags" kind="show" id="2HF-QR-lan"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcr-IT-gJH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4446" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="r0O-VN-7m6">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BFy-DR-Ags" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1NO-0r-mRo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.006.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="6M9-Or-hPB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1PS-0F-fit"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6M9-Or-hPB" firstAttribute="bottom" secondItem="1PS-0F-fit" secondAttribute="bottom" id="0ep-MU-gzQ"/>
+                            <constraint firstItem="6M9-Or-hPB" firstAttribute="top" secondItem="1PS-0F-fit" secondAttribute="top" id="9L3-vu-PQO"/>
+                            <constraint firstItem="6M9-Or-hPB" firstAttribute="trailing" secondItem="1PS-0F-fit" secondAttribute="trailing" id="Daf-CJ-TR2"/>
+                            <constraint firstItem="6M9-Or-hPB" firstAttribute="leading" secondItem="1PS-0F-fit" secondAttribute="leading" id="SE7-Og-Iyi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="bOV-YJ-9Rn">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="mvU-hx-Dcr">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="4oo-D6-5h7" kind="show" id="KVZ-l0-lKS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIg-rl-dpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5313" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="LaG-tl-Jqg">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4oo-D6-5h7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o6F-r0-2Ve">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.007.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ExK-se-bNC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="668-sM-ZW9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ExK-se-bNC" firstAttribute="top" secondItem="668-sM-ZW9" secondAttribute="top" id="O2H-Jg-Cyh"/>
+                            <constraint firstItem="ExK-se-bNC" firstAttribute="trailing" secondItem="668-sM-ZW9" secondAttribute="trailing" id="Qgt-0q-cQz"/>
+                            <constraint firstItem="ExK-se-bNC" firstAttribute="leading" secondItem="668-sM-ZW9" secondAttribute="leading" id="mtN-f1-0y5"/>
+                            <constraint firstItem="ExK-se-bNC" firstAttribute="bottom" secondItem="668-sM-ZW9" secondAttribute="bottom" id="wmC-Pg-Xb9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="9Iy-ZM-Bfg">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="F3E-LS-kMY">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="Kty-9Y-6br" kind="show" id="dAI-bs-hxA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txd-5f-c1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6119" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="67O-LA-1Nd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Kty-9Y-6br" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APp-Fx-vtT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.008.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="eI5-J3-ieR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2pi-RD-aPA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eI5-J3-ieR" firstAttribute="top" secondItem="2pi-RD-aPA" secondAttribute="top" id="08e-8T-L7T"/>
+                            <constraint firstItem="eI5-J3-ieR" firstAttribute="trailing" secondItem="2pi-RD-aPA" secondAttribute="trailing" id="5D0-pX-Vy8"/>
+                            <constraint firstItem="eI5-J3-ieR" firstAttribute="leading" secondItem="2pi-RD-aPA" secondAttribute="leading" id="8Ah-2W-pV9"/>
+                            <constraint firstItem="eI5-J3-ieR" firstAttribute="bottom" secondItem="2pi-RD-aPA" secondAttribute="bottom" id="QqW-bF-qbr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="5GP-2N-PAq">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="0am-BL-o7d">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="g87-v1-Lmw" kind="show" id="6jH-tg-15h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oL9-Ru-DHp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6981" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="cAT-bi-xaF">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="g87-v1-Lmw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vxS-Er-TzH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.009.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="5D6-Q4-APn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cMb-cq-x7e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5D6-Q4-APn" firstAttribute="bottom" secondItem="cMb-cq-x7e" secondAttribute="bottom" id="JMT-ak-kdh"/>
+                            <constraint firstItem="5D6-Q4-APn" firstAttribute="leading" secondItem="cMb-cq-x7e" secondAttribute="leading" id="c2Y-NF-0U3"/>
+                            <constraint firstItem="5D6-Q4-APn" firstAttribute="trailing" secondItem="cMb-cq-x7e" secondAttribute="trailing" id="ooo-Ni-FZV"/>
+                            <constraint firstItem="5D6-Q4-APn" firstAttribute="top" secondItem="cMb-cq-x7e" secondAttribute="top" id="uYq-1y-idL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="Alc-eI-uQA">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="r8n-Fr-UYU">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="H9H-Y9-DXj" kind="show" id="J2R-A5-9Jm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYm-nU-3vq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7846" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="oZM-m3-Hk6">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="H9H-Y9-DXj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O8O-Gp-L3i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.010.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ayD-hW-nUR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V5g-Zp-ZSh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ayD-hW-nUR" firstAttribute="trailing" secondItem="V5g-Zp-ZSh" secondAttribute="trailing" id="CQG-oc-O3b"/>
+                            <constraint firstItem="ayD-hW-nUR" firstAttribute="bottom" secondItem="V5g-Zp-ZSh" secondAttribute="bottom" id="NYY-Y7-81z"/>
+                            <constraint firstItem="ayD-hW-nUR" firstAttribute="leading" secondItem="V5g-Zp-ZSh" secondAttribute="leading" id="ayD-vz-a30"/>
+                            <constraint firstItem="ayD-hW-nUR" firstAttribute="top" secondItem="V5g-Zp-ZSh" secondAttribute="top" id="vWX-ed-JzZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="thB-6M-Gj6">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="ynZ-4j-LFE">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="Qyq-5a-Ur9" kind="show" id="tGj-MI-GhG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQc-bk-0Lq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8651" y="-1383"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="wIf-hn-KtY">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Qyq-5a-Ur9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F65-Hi-8Gw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.011.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9X4-KX-FOa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t2m-mX-2wD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9X4-KX-FOa" firstAttribute="leading" secondItem="t2m-mX-2wD" secondAttribute="leading" id="Cgu-zZ-6cZ"/>
+                            <constraint firstItem="9X4-KX-FOa" firstAttribute="bottom" secondItem="t2m-mX-2wD" secondAttribute="bottom" id="Dz6-P3-BH5"/>
+                            <constraint firstItem="9X4-KX-FOa" firstAttribute="top" secondItem="t2m-mX-2wD" secondAttribute="top" id="U1L-ug-N0n"/>
+                            <constraint firstItem="9X4-KX-FOa" firstAttribute="trailing" secondItem="t2m-mX-2wD" secondAttribute="trailing" id="U4I-aj-6F4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="BJT-7W-5fE">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="wgi-43-tbn">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="BNO-Af-umf" kind="show" id="IQw-8A-VZH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLh-hx-UV1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="-2152"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="5bd-2g-Bl1">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BNO-Af-umf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPX-Cn-cfv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.012.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="h9n-xB-CfX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4m2-TS-IHd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h9n-xB-CfX" firstAttribute="bottom" secondItem="4m2-TS-IHd" secondAttribute="bottom" id="1cA-J1-fUe"/>
+                            <constraint firstItem="h9n-xB-CfX" firstAttribute="top" secondItem="4m2-TS-IHd" secondAttribute="top" id="7C3-JX-XSa"/>
+                            <constraint firstItem="h9n-xB-CfX" firstAttribute="trailing" secondItem="4m2-TS-IHd" secondAttribute="trailing" id="UFf-vx-voB"/>
+                            <constraint firstItem="h9n-xB-CfX" firstAttribute="leading" secondItem="4m2-TS-IHd" secondAttribute="leading" id="gFc-Zc-on6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="gRb-P2-sef">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="jaY-UA-WmZ">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="tD2-L6-9hy" kind="show" id="t33-MA-5If"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyN-L4-5zQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="-2152"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="LA3-Sp-Dhp">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="tD2-L6-9hy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0i5-r0-pnc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.013.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="QZv-zJ-yCE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d3J-cp-BFN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QZv-zJ-yCE" firstAttribute="leading" secondItem="d3J-cp-BFN" secondAttribute="leading" id="KyY-UU-i07"/>
+                            <constraint firstItem="QZv-zJ-yCE" firstAttribute="bottom" secondItem="d3J-cp-BFN" secondAttribute="bottom" id="fAK-gM-gWP"/>
+                            <constraint firstItem="QZv-zJ-yCE" firstAttribute="trailing" secondItem="d3J-cp-BFN" secondAttribute="trailing" id="ikj-tz-qyO"/>
+                            <constraint firstItem="QZv-zJ-yCE" firstAttribute="top" secondItem="d3J-cp-BFN" secondAttribute="top" id="vdW-NA-YRF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="DFu-K8-ctj">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="YDt-Gs-QVL">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="4qQ-fi-0lZ" kind="show" id="rYh-hM-Kq9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkc-iC-lML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2661" y="-2152"/>
+        </scene>
+        <!--チュートリアル-->
+        <scene sceneID="lV2-B9-WSv">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4qQ-fi-0lZ" customClass="FinishTutorialViewController" customModule="StopProcrastination" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A7G-I6-tTo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MONOSAGA tutorial.014.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9GC-mB-Uil">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U9E-8q-hhe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9GC-mB-Uil" firstAttribute="top" secondItem="U9E-8q-hhe" secondAttribute="top" id="1t2-Wp-NTS"/>
+                            <constraint firstItem="9GC-mB-Uil" firstAttribute="bottom" secondItem="U9E-8q-hhe" secondAttribute="bottom" id="Kdj-hl-nnh"/>
+                            <constraint firstItem="9GC-mB-Uil" firstAttribute="trailing" secondItem="U9E-8q-hhe" secondAttribute="trailing" id="SUY-3x-nzy"/>
+                            <constraint firstItem="9GC-mB-Uil" firstAttribute="leading" secondItem="U9E-8q-hhe" secondAttribute="leading" id="jnH-sZ-JPo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="チュートリアル" id="SM6-q4-M8P">
+                        <barButtonItem key="rightBarButtonItem" title="finish" id="NP1-vB-NW8">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <action selector="tappedFinishButton:" destination="4qQ-fi-0lZ" id="sxT-Mk-kVr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUD-Qc-Yed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3532" y="-2152"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="MONOSAGA tutorial.001.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.002.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.003.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.004.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.005.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.006.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.007.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.008.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.009.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.010.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.011.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.012.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.013.jpeg" width="1170" height="2532"/>
+        <image name="MONOSAGA tutorial.014.jpeg" width="1170" height="2532"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

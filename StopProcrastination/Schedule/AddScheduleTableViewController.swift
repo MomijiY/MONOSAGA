@@ -129,6 +129,10 @@ class AddScheduleTableViewController: UITableViewController, UITextFieldDelegate
     @objc func done3() {
         contentTextView.endEditing(true)
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 

@@ -32,6 +32,8 @@
 		79B0AEE3256B299500ADD3BE /* NeedThingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B0AEE1256B299500ADD3BE /* NeedThingsTableViewCell.xib */; };
 		79B0AEF4256B77AC00ADD3BE /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0AEF3256B77AC00ADD3BE /* NavViewController.swift */; };
 		79B0AEFC256B77E000ADD3BE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0AEFB256B77DF00ADD3BE /* TabViewController.swift */; };
+		79B4ACD125AC152C00CFEFA4 /* MONOSAGA tutorial in Resources */ = {isa = PBXBuildFile; fileRef = 79B4ACD025AC152C00CFEFA4 /* MONOSAGA tutorial */; };
+		79B4ACD725AC17E500CFEFA4 /* FinishTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4ACD625AC17E500CFEFA4 /* FinishTutorialViewController.swift */; };
 		79E9A89D257B3C64000F5863 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A89C257B3C64000F5863 /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,8 @@
 		79B0AEE1256B299500ADD3BE /* NeedThingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NeedThingsTableViewCell.xib; sourceTree = "<group>"; };
 		79B0AEF3256B77AC00ADD3BE /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		79B0AEFB256B77DF00ADD3BE /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		79B4ACD025AC152C00CFEFA4 /* MONOSAGA tutorial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "MONOSAGA tutorial"; sourceTree = "<group>"; };
+		79B4ACD625AC17E500CFEFA4 /* FinishTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishTutorialViewController.swift; sourceTree = "<group>"; };
 		79E9A89C257B3C64000F5863 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		8B87FE1B9865665006C46CB9 /* Pods_StopProcrastination.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopProcrastination.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC82CB627C386EE18EE0DC29 /* Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig"; path = "Target Support Files/Pods-StopProcrastination-StopProcrastinationUITests/Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,12 +194,14 @@
 			isa = PBXGroup;
 			children = (
 				79B0AE7C256A720B00ADD3BE /* AppDelegate.swift */,
+				79B4ACD525AC17BF00CFEFA4 /* Tutorial */,
 				79B0AEB8256A77D400ADD3BE /* Home */,
 				792BF01C25A86A62005B970E /* Schedule */,
 				79B0AEF2256B779700ADD3BE /* Others */,
 				79B0AECE256A7EFD00ADD3BE /* Model */,
 				79B0AE82256A720B00ADD3BE /* Main.storyboard */,
 				79B0AE88256A720F00ADD3BE /* Assets.xcassets */,
+				79B4ACD025AC152C00CFEFA4 /* MONOSAGA tutorial */,
 				79B0AE8A256A720F00ADD3BE /* LaunchScreen.storyboard */,
 				79B0AE8D256A720F00ADD3BE /* Info.plist */,
 				79B0AE85256A720B00ADD3BE /* StopProcrastination.xcdatamodeld */,
@@ -259,6 +265,14 @@
 				792BF04625A86C86005B970E /* DateUtls.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		79B4ACD525AC17BF00CFEFA4 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				79B4ACD625AC17E500CFEFA4 /* FinishTutorialViewController.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +387,7 @@
 			files = (
 				79B0AEE3256B299500ADD3BE /* NeedThingsTableViewCell.xib in Resources */,
 				792BF04F25A86CCE005B970E /* TableViewCell.xib in Resources */,
+				79B4ACD125AC152C00CFEFA4 /* MONOSAGA tutorial in Resources */,
 				79B0AE8C256A720F00ADD3BE /* LaunchScreen.storyboard in Resources */,
 				79B0AE89256A720F00ADD3BE /* Assets.xcassets in Resources */,
 				79B0AE84256A720B00ADD3BE /* Main.storyboard in Resources */,
@@ -553,6 +568,7 @@
 				79B0AED0256A7F1700ADD3BE /* Things.swift in Sources */,
 				79B0AEFC256B77E000ADD3BE /* TabViewController.swift in Sources */,
 				79B0AE7D256A720B00ADD3BE /* AppDelegate.swift in Sources */,
+				79B4ACD725AC17E500CFEFA4 /* FinishTutorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
