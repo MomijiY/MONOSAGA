@@ -34,6 +34,7 @@
 		79B0AEFC256B77E000ADD3BE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0AEFB256B77DF00ADD3BE /* TabViewController.swift */; };
 		79B4ACD125AC152C00CFEFA4 /* MONOSAGA tutorial in Resources */ = {isa = PBXBuildFile; fileRef = 79B4ACD025AC152C00CFEFA4 /* MONOSAGA tutorial */; };
 		79B4ACD725AC17E500CFEFA4 /* FinishTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4ACD625AC17E500CFEFA4 /* FinishTutorialViewController.swift */; };
+		79B4ACE525AC64CB00CFEFA4 /* MONOSAGA icon.001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 79B4ACE425AC64CB00CFEFA4 /* MONOSAGA icon.001.jpeg */; };
 		79E9A89D257B3C64000F5863 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A89C257B3C64000F5863 /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		79B0AEFB256B77DF00ADD3BE /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		79B4ACD025AC152C00CFEFA4 /* MONOSAGA tutorial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "MONOSAGA tutorial"; sourceTree = "<group>"; };
 		79B4ACD625AC17E500CFEFA4 /* FinishTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishTutorialViewController.swift; sourceTree = "<group>"; };
+		79B4ACE425AC64CB00CFEFA4 /* MONOSAGA icon.001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MONOSAGA icon.001.jpeg"; sourceTree = "<group>"; };
 		79E9A89C257B3C64000F5863 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		8B87FE1B9865665006C46CB9 /* Pods_StopProcrastination.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopProcrastination.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC82CB627C386EE18EE0DC29 /* Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig"; path = "Target Support Files/Pods-StopProcrastination-StopProcrastinationUITests/Pods-StopProcrastination-StopProcrastinationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				79B0AECE256A7EFD00ADD3BE /* Model */,
 				79B0AE82256A720B00ADD3BE /* Main.storyboard */,
 				79B0AE88256A720F00ADD3BE /* Assets.xcassets */,
+				79B4ACE425AC64CB00CFEFA4 /* MONOSAGA icon.001.jpeg */,
 				79B4ACD025AC152C00CFEFA4 /* MONOSAGA tutorial */,
 				79B0AE8A256A720F00ADD3BE /* LaunchScreen.storyboard */,
 				79B0AE8D256A720F00ADD3BE /* Info.plist */,
@@ -391,6 +394,7 @@
 				79B0AE8C256A720F00ADD3BE /* LaunchScreen.storyboard in Resources */,
 				79B0AE89256A720F00ADD3BE /* Assets.xcassets in Resources */,
 				79B0AE84256A720B00ADD3BE /* Main.storyboard in Resources */,
+				79B4ACE525AC64CB00CFEFA4 /* MONOSAGA icon.001.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,13 +750,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.1;
 				DEVELOPMENT_TEAM = PS62975MFX;
 				INFOPLIST_FILE = StopProcrastination/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.FindThings;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.MONOSAGA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -766,13 +772,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.1;
 				DEVELOPMENT_TEAM = PS62975MFX;
 				INFOPLIST_FILE = StopProcrastination/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.FindThings;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.MONOSAGA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

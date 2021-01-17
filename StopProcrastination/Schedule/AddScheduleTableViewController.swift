@@ -156,7 +156,8 @@ extension AddScheduleTableViewController {
                 let events = [AddDate(value: ["time1": items.time1,
                                               "time2": items.time2,
                                               "place": items.place,
-                                              "content": items.content])]
+                                              "content": items.content,
+                                              "id": UUID().uuidString])]
                 realm.add(events)
                 print(events)
             }

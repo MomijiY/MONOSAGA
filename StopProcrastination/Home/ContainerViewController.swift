@@ -33,15 +33,32 @@ class ContainerTableViewController: UITableViewController, UITextFieldDelegate {
     
 
     @IBAction func tappedSaveButton(_ sender: UIButton) {
-        things.name = textField.text!
-        things.level = levelLabel.text!
-        things.image = (imageView.image?.toJPEGData())!
-        try! realm.write {
-            let thing = [Thing(value: ["name": things.name, "level": things.level, "image": things.image, "id": UUID().uuidString])]
-            realm.add(thing)
+        if textField.text == "" {
+            let alertController: UIAlertController = UIAlertController(title: "空欄があります。", message: "物の名前を入力してください。", preferredStyle: .alert)
+            let okButton: UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(okButton)
+            self.present(alertController, animated: true, completion: nil)
+        } else if levelLabel.text == "" {
+            let alertController: UIAlertController = UIAlertController(title: "空欄があります。", message: "重要度を入力してください。", preferredStyle: .alert)
+            let okButton: UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(okButton)
+            self.present(alertController, animated: true, completion: nil)
+        } else if imageView.image == nil {
+            let alertController: UIAlertController = UIAlertController(title: "空欄があります。", message: "物を置いた場所を追加してください。", preferredStyle: .alert)
+            let okButton: UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(okButton)
+            self.present(alertController, animated: true, completion: nil)
+        } else {
+            things.name = textField.text!
+            things.level = levelLabel.text!
+            things.image = (imageView.image?.toJPEGData())!
+            try! realm.write {
+                let thing = [Thing(value: ["name": things.name, "level": things.level, "image": things.image, "id": UUID().uuidString])]
+                realm.add(thing)
+            }
+            print(things)
+            self.navigationController?.popViewController(animated: true)
         }
-        print(things)
-        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func tappedEasyButton(_ sender: UIButton) {

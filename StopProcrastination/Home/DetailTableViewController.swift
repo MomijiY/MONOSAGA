@@ -95,6 +95,7 @@ class DetailTableViewController: UITableViewController, UITextFieldDelegate {
             alert.addAction(albumButton)
             alert.addAction(cameraButton)
             alert.addAction(cancelButton)
+            alert.view.tintColor = .systemOrange
             present(alert, animated: true, completion: nil)
             
             tableView.deselectRow(at: indexPath, animated: true)

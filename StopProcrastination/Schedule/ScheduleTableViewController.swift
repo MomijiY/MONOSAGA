@@ -62,6 +62,7 @@ extension ScheduleTableViewController: UITableViewDelegate, UITableViewDataSourc
         UserDefaults.standard.set(memo.time2, forKey: "time2")
         UserDefaults.standard.set(memo.place, forKey: "place")
         UserDefaults.standard.set(memo.content, forKey: "content")
+        UserDefaults.standard.set(memo.id, forKey: "memoId")
         self.performSegue(withIdentifier: "toScheduleDetail", sender: nil)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

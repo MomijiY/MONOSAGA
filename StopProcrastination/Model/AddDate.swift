@@ -13,4 +13,8 @@ class AddDate: Object {
     @objc dynamic var time2: String = ""
     @objc dynamic var place: String = ""
     @objc dynamic var content: String = ""
+    @objc dynamic var id = ""
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
