@@ -20,6 +20,13 @@ class AddScheduleTableViewController: UITableViewController, UITextFieldDelegate
     var timePicker: UIDatePicker = UIDatePicker()
     var timePicker2: UIDatePicker = UIDatePicker()
     
+    let identifier = UUID().uuidString
+    let finishIdentifier = UUID().uuidString
+    
+    let content = UNMutableNotificationContent()
+    let Finishcontent = UNMutableNotificationContent()
+    
+    var request:UNNotificationRequest!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -150,17 +157,44 @@ extension AddScheduleTableViewController {
             items.time2 = timeTwoTextField.text!
             items.place = placeTextField.text!
             items.content = contentTextView.text
-            
+            items.identifier = identifier
             let realm = try! Realm()
             try! realm.write{
                 let events = [AddDate(value: ["time1": items.time1,
                                               "time2": items.time2,
                                               "place": items.place,
                                               "content": items.content,
+                                              "identifier": items.identifier,
                                               "id": UUID().uuidString])]
                 realm.add(events)
                 print(events)
             }
+            os_log("setButton")
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeStyle = .medium
+            dateFormatter.dateStyle = .medium
+            dateFormatter.locale = Locale(identifier: "ja_JP")
+                   
+            let otherDate1 = timePicker.date
+            print("otherDate1: \(otherDate1)")
+            let targetDate = Calendar.current.dateComponents(
+                [.year, .month, .day, .hour, .minute],
+                from: otherDate1)
+            print("ターゲットは\(targetDate)")
+            
+            let trigger = UNCalendarNotificationTrigger.init(dateMatching: targetDate, repeats: false)
+            content.title = "予定があります。忘れ物をしないようにしましょう！"
+            content.body = dateFormatter.string(from: otherDate1)
+            content.sound = UNNotificationSound.default
+            request = UNNotificationRequest.init(
+                    identifier: identifier,
+                    content: content,
+                    trigger: trigger)
+            UserDefaults.standard.set(identifier, forKey: "identifier")
+            UserDefaults.standard.set(content.title, forKey: "notiContent")
+            let center = UNUserNotificationCenter.current()
+            center.add(request)
             self.navigationController?.popViewController(animated: true)
         }
 

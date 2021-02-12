@@ -75,8 +75,10 @@ extension ScheduleTableViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if(editingStyle == UITableViewCell.EditingStyle.delete) {
             let realm = try! Realm()
+            let memo = items[indexPath.row]
             try! realm.write {
                 print("削除")
+                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [memo.identifier])
                 realm.delete(items[indexPath.row])
                 items.remove(at: indexPath.row)
                 tableView.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .automatic)
